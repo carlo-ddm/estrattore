@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: cadetblue;
+  font-family: 'Permanent Marker', cursive;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+#button, #reset {
+  font-family: 'Permanent Marker', cursive;
+  width: 50px;
+  margin: 50px;
+  border: 1px solid lightgrey;
+  border-radius: 15px;
+}
+
+
+#container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#estrattore {
+  width: 55rem;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: cornsilk;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+
