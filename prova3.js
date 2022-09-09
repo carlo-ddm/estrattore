@@ -21,6 +21,9 @@ const family = [
 console.log(family);
 
 let un = []
+var audio = new Audio('mixkit-video-game-mystery-alert-234.wav')
+audio.play()
+var audio_reset = new Audio('mixkit-select-click-1109.wav')
 
 const start_estr = document.getElementById('name').innerHTML="Estrai"
 
@@ -30,6 +33,7 @@ button.addEventListener('click',estrai)
 
 const reset = document.getElementById('reset')
 reset.addEventListener('click', function res(){
+  audio_reset.play()
   for (let index = 0; index < un.length; index++) {
     family.push(un[index]) 
   }
@@ -41,6 +45,7 @@ reset.addEventListener('click', function res(){
 
 // Funzione di estrazione
 function estrai() {
+  audio.play() 
   n = Math.round(Math.random() * (family.length));
 
   for (let index = 0; index < family.length; index++) {
